@@ -7,6 +7,8 @@ git pull origin master;
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
 		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
+	# Install nvm
+	curl https://raw.githubusercontent.com/creationix/nvm/v0.17.3/install.sh | bash
 	source ~/.bash_profile;
 }
 

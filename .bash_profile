@@ -46,3 +46,7 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# Use nvm and node 0.10.32
+source ~/.nvm/nvm
+nvm use 0.10.32
